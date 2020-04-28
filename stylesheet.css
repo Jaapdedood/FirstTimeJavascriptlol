@@ -1,0 +1,18 @@
+.subscriptionRow{
+    display: flex;
+}
+.subscriptionColumn{
+    flex: 33.33%;
+    padding: 25px;
+}
+.subscriptionRow p {
+    flex: 33.33%;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+}
+
+.subscriptionImage {
+  width: 33.33%;
+}

@@ -1,0 +1,58 @@
+<div class="subscriptionRow">
+    <a href="#question2" class="subscriptionColumn"><img src="https://aosacoffee.com/wp-content/uploads/2020/04/AOSA_Coffee-shop-Pour-over-2-441x353-1.jpg" onclick="answer1('pour')" class="subscriptionImage"></a>
+    <a href="#question2" class="subscriptionColumn"><img src="https://aosacoffee.com/wp-content/uploads/2020/04/BB-MenuEspresso_edited-square.jpeg" onclick="answer1('drip')" class="subscriptionImage"></a>
+    <a href="#question2" class="subscriptionColumn"><img src="https://aosacoffee.com/wp-content/uploads/2020/04/BB-MenuLatte31_edited-square.jpeg" onclick="answer1('latte')" class="subscriptionImage"></a>
+</div>
+<div class="subscriptionRow">
+    <p>Pour Over</p>
+    <p>Espresso or Drip</p>
+    <p>Latte</p>
+</div>
+
+<div id="pourChoices" style="display:none">
+  What do you make at home? <br>
+   <button onclick="answer2('pour')">Pour Over (v60, Chemex, Kalita Wave, Phoenix v70)</button>
+   <button onclick="answer2('drip')">Drip (French Press, Mr. Coffee, Percolator)</button>
+   <button onclick="answer2('espresso')">Espresso</button>
+</div> 
+
+<div id="dripChoices" style="display:none">
+  What do you make at home? <br>
+   <button onclick="answer2('drip')">Drip (French Press, Mr. Coffee, Percolator)</button>
+   <button onclick="answer2('espresso')">Espresso</button>
+   <button onclick="answer2('keurig')">Mr. Coffee or Keurig</button>
+</div> 
+
+<div id="latteChoices" style="display:none">
+  What do you make at home? <br>
+   <button onclick="answer2('espresso')">Espresso</button>
+   <button onclick="answer2('keurig')">Mr. Coffee or Keurig</button>
+   <button onclick="answer2('instant')">Instant Coffee</button>
+</div> 
+
+<div id="question3" style="display:none">
+  What Path do you take? <br>
+   <button onclick="answer3('exciting')">The exciting and unknown</button>
+   <button onclick="answer3('between')">The one in between</button>
+   <button onclick="answer3('tried')">The tried and true</button>
+</div> 
+
+<div id="question4" style="display:none">
+  How often would you like a new bag of coffee? <br>
+   <button onclick="answer4('weekly')">Weekly</button>
+   <button onclick="answer4('biweekly')">Every other week</button>
+   <button onclick="answer4('monthly')">Monthly</button>
+</div> 
+
+<div id="question5" style="display:none">
+  Choose a grind:<br>
+   <button onclick="showResult('whole')">Whole beans (I have a grinder)</button>
+   <button onclick="showResult('coarse')">Coarse (French press, V60, Mr. Coffee)</button>
+   <button onclick="showResult('fine')">Fine (Espresso)</button>
+</div> 
+
+<div id="result" style="display:none">
+<br><br>
+  Your personal subscription program:
+  <p id="variables"></p>  
+</div> 
