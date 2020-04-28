@@ -1,6 +1,7 @@
 .subscriptionRow{
     display: flex;
 }
+
 .subscriptionColumn{
     flex: 33.33%;
     padding: 25px;
@@ -12,7 +13,18 @@
     font-weight: 300;
     font-size: 1em;
 }
+.subscriptionRow h1 {
+    flex: 100%;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: 3em;
+}
 
 .subscriptionImage {
-  width: 33.33%;
+  width: 100%;
+}
+
+#question1, #dripChoices, #pourChoices, #latteChoices, #question2, #question3, #question4, #question5 {
+    padding-bottom: 50px;
 }

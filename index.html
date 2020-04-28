@@ -1,58 +1,157 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>The HTML5 Herald</title>
+  
+  <link rel="stylesheet" href="stylesheet.css">
+  <script src="subscription.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+  
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+  
+        // Store hash
+        var hash = this.hash;
+  
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+  
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  });
+  </script>
+</head>
+
+<body>
+
+<div id="question1">
 <div class="subscriptionRow">
-    <a href="#question2" class="subscriptionColumn"><img src="https://aosacoffee.com/wp-content/uploads/2020/04/AOSA_Coffee-shop-Pour-over-2-441x353-1.jpg" onclick="answer1('pour')" class="subscriptionImage"></a>
-    <a href="#question2" class="subscriptionColumn"><img src="https://aosacoffee.com/wp-content/uploads/2020/04/BB-MenuEspresso_edited-square.jpeg" onclick="answer1('drip')" class="subscriptionImage"></a>
-    <a href="#question2" class="subscriptionColumn"><img src="https://aosacoffee.com/wp-content/uploads/2020/04/BB-MenuLatte31_edited-square.jpeg" onclick="answer1('latte')" class="subscriptionImage"></a>
+    <a href="#pourChoices" class="subscriptionColumn"><img src="https://aosacoffee.com/wp-content/uploads/2020/04/AOSA_Coffee-shop-Pour-over-2-441x353-1.jpg" onclick="answer1('pour')" class="subscriptionImage"></a>
+    <a href="#dripChoices" class="subscriptionColumn"><img src="https://aosacoffee.com/wp-content/uploads/2020/04/BB-MenuEspresso_edited-square.jpeg" onclick="answer1('drip')" class="subscriptionImage"></a>
+    <a href="#latteChoices" class="subscriptionColumn"><img src="https://aosacoffee.com/wp-content/uploads/2020/04/BB-MenuLatte31_edited-square.jpeg" onclick="answer1('latte')" class="subscriptionImage"></a>
 </div>
 <div class="subscriptionRow">
     <p>Pour Over</p>
     <p>Espresso or Drip</p>
     <p>Latte</p>
 </div>
+</div>
 
 <div id="pourChoices" style="display:none">
-  What do you make at home? <br>
-   <button onclick="answer2('pour')">Pour Over (v60, Chemex, Kalita Wave, Phoenix v70)</button>
-   <button onclick="answer2('drip')">Drip (French Press, Mr. Coffee, Percolator)</button>
-   <button onclick="answer2('espresso')">Espresso</button>
-</div> 
+    <div class="subscriptionRow">
+        <h1>What do you make at home?</h1>
+    </div>
+    <div class="subscriptionRow">
+        <a href="#question3" class="subscriptionColumn"><img src="https://aosacoffee.com/wp-content/uploads/2020/04/AOSA_Coffee-shop-Pour-over-2-441x353-1.jpg" onclick="answer2('pour')" class="subscriptionImage"></a>
+        <a href="#question3" class="subscriptionColumn"><img src="https://aosacoffee.com/wp-content/uploads/2020/04/BB-MenuEspresso_edited-square.jpeg" onclick="answer2('drip')" class="subscriptionImage"></a>
+        <a href="#question3" class="subscriptionColumn"><img src="https://aosacoffee.com/wp-content/uploads/2020/04/BB-MenuLatte31_edited-square.jpeg" onclick="answer2('espresso')" class="subscriptionImage"></a>
+    </div>
+    <div class="subscriptionRow">
+        <p>Pour Over (v60, Chemex, Kalita Wave, Phoenix v70)</p>
+        <p>Drip (French Press, Mr. Coffee, Percolator)</p>
+        <p>Espresso</p>
+    </div>
+</div>
+
 
 <div id="dripChoices" style="display:none">
-  What do you make at home? <br>
-   <button onclick="answer2('drip')">Drip (French Press, Mr. Coffee, Percolator)</button>
-   <button onclick="answer2('espresso')">Espresso</button>
-   <button onclick="answer2('keurig')">Mr. Coffee or Keurig</button>
-</div> 
+    <div class="subscriptionRow">
+        <h1>What do you make at home?</h1>
+    </div>
+    <div class="subscriptionRow">
+        <a href="#question3" class="subscriptionColumn"><img src="https://aosacoffee.com/wp-content/uploads/2020/04/AOSA_Coffee-shop-Pour-over-2-441x353-1.jpg" onclick="answer2('drip')" class="subscriptionImage"></a>
+        <a href="#question3" class="subscriptionColumn"><img src="https://aosacoffee.com/wp-content/uploads/2020/04/BB-MenuEspresso_edited-square.jpeg" onclick="answer2('espresso')" class="subscriptionImage"></a>
+        <a href="#question3" class="subscriptionColumn"><img src="https://aosacoffee.com/wp-content/uploads/2020/04/BB-MenuLatte31_edited-square.jpeg" onclick="answer2('keurig')" class="subscriptionImage"></a>
+    </div>
+    <div class="subscriptionRow">
+        <p>Drip (French Press, Mr. Coffee, Percolator)</p>
+        <p>Espresso</p>
+        <p>Mr. Coffee or Keurig</p>
+    </div>
+</div>
 
 <div id="latteChoices" style="display:none">
-  What do you make at home? <br>
-   <button onclick="answer2('espresso')">Espresso</button>
-   <button onclick="answer2('keurig')">Mr. Coffee or Keurig</button>
-   <button onclick="answer2('instant')">Instant Coffee</button>
-</div> 
+    <div class="subscriptionRow">
+        <h1>What do you make at home?</h1>
+    </div>
+    <div class="subscriptionRow">
+        <a href="#question3" class="subscriptionColumn"><img src="https://aosacoffee.com/wp-content/uploads/2020/04/AOSA_Coffee-shop-Pour-over-2-441x353-1.jpg" onclick="answer2('espresso')" class="subscriptionImage"></a>
+        <a href="#question3" class="subscriptionColumn"><img src="https://aosacoffee.com/wp-content/uploads/2020/04/BB-MenuEspresso_edited-square.jpeg" onclick="answer2('keurig')" class="subscriptionImage"></a>
+        <a href="#question3" class="subscriptionColumn"><img src="https://aosacoffee.com/wp-content/uploads/2020/04/BB-MenuLatte31_edited-square.jpeg" onclick="answer2('instant')" class="subscriptionImage"></a>
+    </div>
+    <div class="subscriptionRow">        
+        <p>Espresso</p>
+        <p>Mr. Coffee or Keurig</p>
+        <p>Instant Coffee</p>
+    </div>
+</div>
 
 <div id="question3" style="display:none">
-  What Path do you take? <br>
-   <button onclick="answer3('exciting')">The exciting and unknown</button>
-   <button onclick="answer3('between')">The one in between</button>
-   <button onclick="answer3('tried')">The tried and true</button>
-</div> 
+    <div class="subscriptionRow">
+        <h1>What path do you take?</h1>
+    </div>
+    <div class="subscriptionRow">
+        <a href="#question4" class="subscriptionColumn"><img src="https://aosacoffee.com/wp-content/uploads/2020/04/AOSA_Coffee-shop-Pour-over-2-441x353-1.jpg" onclick="answer3('exciting')" class="subscriptionImage"></a>
+        <a href="#question4" class="subscriptionColumn"><img src="https://aosacoffee.com/wp-content/uploads/2020/04/BB-MenuEspresso_edited-square.jpeg" onclick="answer3('between')" class="subscriptionImage"></a>
+        <a href="#question4" class="subscriptionColumn"><img src="https://aosacoffee.com/wp-content/uploads/2020/04/BB-MenuLatte31_edited-square.jpeg" onclick="answer3('tried')" class="subscriptionImage"></a>
+    </div>
+    <div class="subscriptionRow">        
+        <p>The exciting and unknown</p>
+        <p>The one in between</p>
+        <p>The tried and true</p>
+    </div>
+</div>
 
 <div id="question4" style="display:none">
-  How often would you like a new bag of coffee? <br>
-   <button onclick="answer4('weekly')">Weekly</button>
-   <button onclick="answer4('biweekly')">Every other week</button>
-   <button onclick="answer4('monthly')">Monthly</button>
-</div> 
+    <div class="subscriptionRow">
+        <h1>How often would you like a new bag of coffee?</h1>
+    </div>
+    <div class="subscriptionRow">
+        <a href="#question5" class="subscriptionColumn"><img src="https://aosacoffee.com/wp-content/uploads/2020/04/AOSA_Coffee-shop-Pour-over-2-441x353-1.jpg" onclick="answer4('weekly')" class="subscriptionImage"></a>
+        <a href="#question5" class="subscriptionColumn"><img src="https://aosacoffee.com/wp-content/uploads/2020/04/BB-MenuEspresso_edited-square.jpeg" onclick="answer4('biweekly')" class="subscriptionImage"></a>
+        <a href="#question5" class="subscriptionColumn"><img src="https://aosacoffee.com/wp-content/uploads/2020/04/BB-MenuLatte31_edited-square.jpeg" onclick="answer4('monthly')" class="subscriptionImage"></a>
+    </div>
+    <div class="subscriptionRow">        
+        <p>Weekly</p>
+        <p>Every other week</p>
+        <p>Monthly</p>
+    </div>
+</div>
 
 <div id="question5" style="display:none">
-  Choose a grind:<br>
-   <button onclick="showResult('whole')">Whole beans (I have a grinder)</button>
-   <button onclick="showResult('coarse')">Coarse (French press, V60, Mr. Coffee)</button>
-   <button onclick="showResult('fine')">Fine (Espresso)</button>
-</div> 
+    <div class="subscriptionRow">
+        <h1>Choose a grind:</h1>
+    </div>
+    <div class="subscriptionRow">
+        <a href="#result" class="subscriptionColumn"><img src="https://aosacoffee.com/wp-content/uploads/2020/04/AOSA_Coffee-shop-Pour-over-2-441x353-1.jpg" onclick="showResult('whole')" class="subscriptionImage"></a>
+        <a href="#result" class="subscriptionColumn"><img src="https://aosacoffee.com/wp-content/uploads/2020/04/BB-MenuEspresso_edited-square.jpeg" onclick="showResult('coarse')" class="subscriptionImage"></a>
+        <a href="#result" class="subscriptionColumn"><img src="https://aosacoffee.com/wp-content/uploads/2020/04/BB-MenuLatte31_edited-square.jpeg" onclick="showResult('fine')" class="subscriptionImage"></a>
+    </div>
+    <div class="subscriptionRow">        
+        <p>Whole beans (I have a grinder)</p>
+        <p>Coarse (French press, V60, Mr. Coffee)</p>
+        <p>Fine (Espresso)</p>
+    </div>
+</div>
 
-<div id="result" style="display:none">
-<br><br>
-  Your personal subscription program:
+<div class ="subscriptionRow" id="result" style="display:none">
+  <h1>Your personal subscription program:</h1>
   <p id="variables"></p>  
 </div> 
+</body>
+</html>
