@@ -37,23 +37,23 @@
   </script>
 </head>
 <body>
-    <div id="question3" style="display:none">
+    <div id="question1">
         <div class="subscriptionRow">
             <h1>What path do you take?</h1>
         </div>
         <div class="subscriptionRow">
-            <a class="subscriptionColumn"><img src="https://aosacoffee.com/wp-content/uploads/2020/04/adventure.jpeg" onclick="answer3('exciting', 13)" class="subscriptionImage"></a>
-            <a class="subscriptionColumn"><img src="https://aosacoffee.com/wp-content/uploads/2020/04/between.jpeg" onclick="answer3('between', 14)" class="subscriptionImage"></a>
-            <a class="subscriptionColumn"><img src="https://aosacoffee.com/wp-content/uploads/2020/04/tried.jpeg" onclick="answer3('tried', 15)" class="subscriptionImage"></a>
+            <a class="subscriptionColumn"><img src="https://aosacoffee.com/wp-content/uploads/2020/04/adventure.jpeg" onclick="answer1('exciting', 1)" class="subscriptionImage"></a>
+            <a class="subscriptionColumn"><img src="https://aosacoffee.com/wp-content/uploads/2020/04/between.jpeg" onclick="answer1('between', 2)" class="subscriptionImage"></a>
+            <a class="subscriptionColumn"><img src="https://aosacoffee.com/wp-content/uploads/2020/04/tried.jpeg" onclick="answer1('tried', 3)" class="subscriptionImage"></a>
         </div>
         <div class="subscriptionRow">        
-            <p id = "option13">The exciting and unknown</p>
-            <p id = "option14">The one in between</p>
-            <p id = "option15">The tried and true</p>
+            <p id = "option1">The exciting and unknown</p>
+            <p id = "option2">The one in between</p>
+            <p id = "option3">The tried and true</p>
         </div>
     </div>
             
-    <div id="pourChoices" style="display:none">
+    <div id="question2" style="display:none">
         <div class="subscriptionRow">
             <h1>How do you make coffee at home?</h1>
         </div>
@@ -61,19 +61,37 @@
             <a class="subscriptionColumn"><img src="https://aosacoffee.com/wp-content/uploads/2020/04/AOSA_Coffee-shop-Pour-square.jpg" onclick="answer2('pour', 4)" class="subscriptionImage"></a>
             <a class="subscriptionColumn"><img src="https://aosacoffee.com/wp-content/uploads/2020/04/BB-MenuPressedCoffee2-square.jpg" onclick="answer2('drip', 5)" class="subscriptionImage"></a>
             <a class="subscriptionColumn"><img src="https://aosacoffee.com/wp-content/uploads/2020/04/BB-MenuEspresso_edited-square.jpeg" onclick="answer2('espresso', 6)" class="subscriptionImage"></a>
-            <a class="subscriptionColumn"><img src="https://aosacoffee.com/wp-content/uploads/2020/04/BB-MenuEspresso_edited-square.jpeg" onclick="answer2('espresso', 6)" class="subscriptionImage"></a>
-            <a class="subscriptionColumn"><img src="https://aosacoffee.com/wp-content/uploads/2020/04/BB-MenuEspresso_edited-square.jpeg" onclick="answer2('espresso', 6)" class="subscriptionImage"></a>
+            <a class="subscriptionColumn"><img src="https://aosacoffee.com/wp-content/uploads/2020/04/BB-MenuEspresso_edited-square.jpeg" onclick="answer2('espresso', 7)" class="subscriptionImage"></a>
+            <a class="subscriptionColumn"><img src="https://aosacoffee.com/wp-content/uploads/2020/04/BB-MenuEspresso_edited-square.jpeg" onclick="answer2('espresso', 8)" class="subscriptionImage"></a>
         </div>
         <div class="subscriptionRow">
             <p id="option4">Batch/Machine</p>
             <p id="option5">French Press</p>
             <p id="option6">V60/Chem</p>
-            <p id="option6">Espresso Black</p>
-            <p id="option6">Cappuccino/Latte</p>
+            <p id="option7">Espresso Black</p>
+            <p id="option8">Cappuccino/Latte</p>
         </div>
     </div>
         
-
+    <div id="question3" style="display:none">
+      <div class="subscriptionRow">
+          <h1>How much cream would you like?</h1>
+      </div>
+      <div class="subscriptionRow">
+          <a class="subscriptionColumn"><img src="https://aosacoffee.com/wp-content/uploads/2020/04/AOSA_Coffee-shop-Pour-square.jpg" onclick="answer3('pour', 9)" class="subscriptionImage"></a>
+          <a class="subscriptionColumn"><img src="https://aosacoffee.com/wp-content/uploads/2020/04/BB-MenuPressedCoffee2-square.jpg" onclick="answer3('drip', 10)" class="subscriptionImage"></a>
+          <a class="subscriptionColumn"><img src="https://aosacoffee.com/wp-content/uploads/2020/04/BB-MenuEspresso_edited-square.jpeg" onclick="answer3('espresso', 11)" class="subscriptionImage"></a>
+          <a class="subscriptionColumn"><img src="https://aosacoffee.com/wp-content/uploads/2020/04/BB-MenuEspresso_edited-square.jpeg" onclick="answer3('espresso', 12)" class="subscriptionImage"></a>
+          <a class="subscriptionColumn"><img src="https://aosacoffee.com/wp-content/uploads/2020/04/BB-MenuEspresso_edited-square.jpeg" onclick="answer3('espresso', 13)" class="subscriptionImage"></a>
+      </div>
+      <div class="subscriptionRow">
+          <p id="option9">None</p>
+          <p id="option10">Light cream</p>
+          <p id="option11">Inbetween</p>
+          <p id="option12">Milky</p>
+          <p id="option13">Heavy Cream</p>
+      </div>
+  </div>
         
     <div class ="subscriptionRow" id="result" style="display:none">
         <h1>Your personal subscription program:</h1>
