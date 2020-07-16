@@ -23,8 +23,42 @@
 
 .subscriptionImage {
   width: 100%;
+	cursor: pointer;
 }
 
 #question1, #dripChoices, #pourChoices, #latteChoices, #question2, #question3, #question4, #question5 {
     padding-bottom: 50px;
+}
+
+#resultImg {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cartButton {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none !important;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: .875rem;
+    line-height: 1.7142857;
+    box-shadow: inset 0 0 0 2px transparent;
+    border-radius: 0;
+    border: 1px solid;
+    padding: 11px 23px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+}
+
+@media screen and (max-width: 1126px) {
+	.subscriptionColumn{
+ 	   flex: 33.33%;
+ 	   padding: 5px;
+	}
 }
