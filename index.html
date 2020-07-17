@@ -5,7 +5,7 @@
   <meta charset="utf-8">
 
   <title>The HTML5 Herald</title>
-  
+
   <link rel="stylesheet" href="stylesheet.css">
   <script src="subscription.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -13,21 +13,21 @@
   $(document).ready(function(){
     // Add smooth scrolling to all links
     $("a").on('click', function(event) {
-  
+
       // Make sure this.hash has a value before overriding default behavior
       if (this.hash !== "") {
         // Prevent default anchor click behavior
         event.preventDefault();
-  
+
         // Store hash
         var hash = this.hash;
-  
+
         // Using jQuery's animate() method to add smooth page scroll
         // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
         $('html, body').animate({
           scrollTop: $(hash).offset().top
         }, 800, function(){
-  
+
           // Add hash (#) to URL when done scrolling (default click behavior)
           window.location.hash = hash;
         });
@@ -46,13 +46,13 @@
             <a class="subscriptionColumn"><img src="https://aosacoffee.com/wp-content/uploads/2020/04/between.jpeg" onclick="answer1('between', 2)" class="subscriptionImage"></a>
             <a class="subscriptionColumn"><img src="https://aosacoffee.com/wp-content/uploads/2020/04/tried.jpeg" onclick="answer1('tried', 3)" class="subscriptionImage"></a>
         </div>
-        <div class="subscriptionRow">        
+        <div class="subscriptionRow">
             <p id = "option1">The exciting and unknown</p>
             <p id = "option2">The one in between</p>
             <p id = "option3">The tried and true</p>
         </div>
     </div>
-            
+
     <div id="question2" style="display:none">
         <div class="subscriptionRow">
             <h1>How do you make coffee at home?</h1>
@@ -72,7 +72,7 @@
             <p id="option8">Cappuccino/Latte</p>
         </div>
     </div>
-        
+
     <div id="question3" style="display:none">
       <div class="subscriptionRow">
           <h1>How much cream would you like?</h1>
@@ -91,15 +91,24 @@
           <p id="option12">Milky</p>
           <p id="option13">Heavy Cream</p>
       </div>
-  </div>
-        
-    <div class ="subscriptionRow" id="result" style="display:none">
-        <h1>Your personal subscription program:</h1>
+    </div>
+
+      <div id="result" class="subscriptionRow" style="display:none">
+        <h1>Your Match:</h1>
         <a href="https://aosacoffee.com/product/aosa-coffee-subscription-delivered-monthly-coarse-grind/"><img id="resultImg" src="https://aosacoffee.com/wp-content/uploads/2020/04/BB-MenuLatte31_edited-square.jpeg" width="400px"></a>
         <p><span id="resultCoffee"></span> Roast Coffee</p>
-        <p>Delivery: <span id="resultFreq"></span></p>
-        <p>Grind: <span id="resultGrind"></span></p>
-                <button class="cartButton"> ADD TO CART </button>
-    </div> 
+        <p>Info A <span id="resultFreq"></span></p>
+        <p>Info B <span id="resultGrind"></span></p>
+        <button class="cartButton"> ADD TO CART </button>
+      </div>
+
+     <div id="result" class ="subscriptionRow" style="display:none">
+        <h1>You May Also Like:</h1>
+        <a href="https://aosacoffee.com/product/aosa-coffee-subscription-delivered-monthly-coarse-grind/"><img id="resultImg" src="https://aosacoffee.com/wp-content/uploads/2020/04/BB-MenuLatte31_edited-square.jpeg" width="400px"></a>
+            <p><span id="resultCoffee"></span> Roast Coffee</p>
+            <p>Info A <span id="resultFreq"></span></p>
+            <p>Info B <span id="resultGrind"></span></p>
+            <button class="cartButton"> ADD TO CART </button>
+    </div>
 </body>
 </html>
